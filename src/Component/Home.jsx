@@ -4,6 +4,7 @@ import { Container } from 'react-bootstrap'
 import { useState } from 'react';
 import { useEffect } from 'react';
 import balu from './Images/Balraj.png'
+import mobileImage from './Images/BalrajMobile.png'
 import prize from './Images/prize-removebg-preview (1).png'
 import About from './About';
 import { useNavigate } from 'react-router-dom';
@@ -57,8 +58,23 @@ const Home = () => {
             </div>
           </div>
           <div className='col-sm-3 image-box pt-4'>
-            <img src={balu} style={{ borderRadius: '20px' }} alt='balraj image' className='baluimg ' />
+            {/* Desktop Image */}
+            <img
+              src={balu}
+              alt='Balraj desktop'
+              className='baluimg d-none d-sm-block'
+              style={{ borderRadius: '20px' }}
+            />
+
+            {/* Mobile Image */}
+            <img
+              src={mobileImage}
+              alt='Balraj mobile'
+              className='baluimg d-block d-sm-none'
+              style={{ borderRadius: '20px' }}
+            />
           </div>
+
         </div>
         <div className='row prizediv'>
           <div className='col-sm-4'>
