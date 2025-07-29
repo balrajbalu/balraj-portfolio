@@ -34,9 +34,9 @@ const MainNavbar = () => {
                                 <Link to='/projects' className="navbar-link">
                                     <b className='btn'>Projects</b>
                                 </Link>
-                                <Link to='/services' className="navbar-link">
+                                {/* <Link to='/services' className="navbar-link">
                                     <b className='btn'>Services</b>
-                                </Link>
+                                </Link> */}
                                 <Link to='/cv' className="navbar-link">
                                     <b className='btn'>Download CV</b>
                                 </Link>

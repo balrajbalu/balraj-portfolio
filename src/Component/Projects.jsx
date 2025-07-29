@@ -19,9 +19,31 @@ import di from './Images/persnol projects/7.png'
 import rp from './Images/persnol projects/8.png'
 import json from './Images/persnol projects/9.png'
 import att from './Images/persnol projects/att.png'
-
+import aidajet from './Images/logo.svg';
+import camp from './Images/camp.avif'
 
 const projects = [
+  {
+    title: 'Aida Jet',
+    description: 'Camp Aida is an all-in-one marketing automation and engagement platform designed to help businesses manage lead generation, events,newsletters, and marketing campaigns efficiently. It provides a suite of tools that streamline customerinteractions, enhance outreach, and improve brand engagement.',
+    imageUrl: aidajet,
+    demoLink: 'https://example.com/demo1',
+    codeLink: 'https://github.com/example/project1',
+  },
+  {
+    title: 'CampGTMPlatform',
+    description: 'Camp Automation is an All-in-One Go-to-Market (GTM) platform designed to streamline and enhance business processes across marketing, sales,and partner management. It offers a comprehensive suite of tools to assist businesses in launching products, nurturing customer relationships,and driving growth',
+    imageUrl: camp,
+    demoLink: 'https://example.com/demo1',
+    codeLink: 'https://github.com/example/project1',
+  },
+  {
+    title: 'Camp Sales App',
+    description: 'Sales Application: Provides a mobile app for sales teams to manage leads, schedule meetings, and track interactions, facilitatingeffective leadconversions.',
+    imageUrl: camp,
+    demoLink: 'https://example.com/demo1',
+    codeLink: 'https://github.com/example/project1',
+  },
   {
     title: 'MEDUSYS',
     description: 'Medusys is a m-health technology and data science company registered in Australia and India with multi-national operations team based in Australia, India and UK. We are a team of physicians, data scientists and IT professionals with a fervent passion for delivering universal e-healthcare.     .MEDUSYS is a Australian Huge project which is based on Medical Online Learning Platform which Provides Knowledges to Doctor',
@@ -64,11 +86,11 @@ const projects = [
     demoLink: 'https://example.com/demo1',
     codeLink: 'https://github.com/example/project1',
   },
-  
+
 ];
 
 
-const personal_projects=[
+const personal_projects = [
   {
     title: 'Attendence Managment with Database',
     description: '',
@@ -160,20 +182,6 @@ const Projects = () => {
           {projects.map((project, index) => (
             <Col key={index} sm={3}>
               <ProjectCard {...project} />
-            </Col>
-          ))}
-        </Row>
-      </Container>
-      <Container>
-        <Row>
-          <Col sm={12}>
-            <h1 className='mt-3' style={{ textAlign: 'center', color: 'silver' }}>Persnol Projects</h1>
-          </Col>
-        </Row>
-        <Row className='showcase'>
-          {personal_projects.map((persnol, index) => (
-            <Col key={index} sm={3}>
-              <ProjectCard {...persnol} />
             </Col>
           ))}
         </Row>

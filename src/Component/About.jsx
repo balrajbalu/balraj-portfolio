@@ -13,19 +13,23 @@ const About = () => {
                         <Card className="quote-card-view">
                             <Card.Body>
                                 <blockquote className="blockquote mb-0">
-                                    <p style={{ textAlign: "justify" }}>
-                                        Hi Everyone, I am <span className="purple">Balraj </span>
-                                        from <span className="purple"> MYSURU KARNATAKA ,INDIA</span>
-                                        <br /> I am Completed bachelour of science in computer Science
-                                        In 'JSS COLLEGE OF ARTS COMMERCE AND SCEIENCE OOTY ROAD MYSURU' in the Year od 2022
-                                        And After that i Joined Full stack developer Course which is plus point to increase my skills
-                                        <br />
-                                        Additionally, I am currently employed as a software developer at
-                                        JAYBLUES AND TECHNOLOGIES.
-                                        <br />
-                                        <br />
-                                        Apart from coding, some other activities that I love to do!
-                                    </p>
+                         <p style={{ textAlign: "justify" }}>
+  Hi everyone, I am <span className="purple">Balraj</span> from 
+  <span className="purple"> Mysuru, Karnataka, India</span>.
+  <br />
+  I have completed my Bachelor of Science in Computer Science from 
+  <strong> JSS College of Arts, Commerce and Science, Ooty Road, Mysuru</strong> in the year 2022.
+  <br />
+  Following my graduation, I pursued a Full Stack Developer course to enhance and diversify my technical skill set.
+  <br />
+  <br />
+  Currently, I am working as a <strong>MERN Stack Developer</strong> at 
+  <strong> Camp Automation Pvt. Ltd.</strong>, located in Jayanagar 8th Block, Bengaluru.
+  <br />
+  <br />
+  Apart from coding, I enjoy engaging in various extracurricular activities that contribute to my personal and professional growth.
+</p>
+
                                     <ul>
                                         <li className="about-activity">
                                             <ImPointRight /> Learning new Skills

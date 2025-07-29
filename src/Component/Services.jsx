@@ -31,6 +31,14 @@ const Services = () => {
           </div>
         </Col>
       </Row>
+      <Row className="services-row mt-3">
+        <Col>
+          <div className="service-item">
+            <h4>4. FreeLancer</h4>
+            <p>Ready to work as a freelancer</p>
+          </div>
+        </Col>
+      </Row>
     </Container>
   );
 };

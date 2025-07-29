@@ -28,7 +28,7 @@ import github from './Images/github.png'
 import php from './Images/icons8-php-80.png'
 import vscode from './Images/vscode.png'
 import jquery from './Images/jquery.png'
-
+import mongo from './Images/mongo.svg'
 const Skills = () => {
     return (
         <div>
@@ -37,29 +37,37 @@ const Skills = () => {
                 <h1 style={{ textAlign: 'center',color:'silver' }}>SKILLS</h1>
                 
                 <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-                    <Col xs={4} md={2} className="tech-icons">
-                        <img src={html} alt='html'/>
-                    </Col>
-                    <Col xs={4} md={2} className="tech-icons">
-                    <img src={css} alt='css'/>
-                    </Col>
-                    <Col xs={4} md={2} className="tech-icons">
-                    <img src={js1} alt='js'/>
-                    </Col>
+                    
                     <Col xs={4} md={2} className="tech-icons">
                     <img src={react} style={{width:'50%'}} alt='react'/>
                     </Col>
                     <Col xs={4} md={2} className="tech-icons">
+                        <img src={mongo} alt='Mongo Db' style={{height:"60px"}}/>
+                    </Col>
+                    
+                    <Col xs={4} md={2} className="tech-icons">
+                    <img src={express} style={{width:'50%'}}  alt='express js'/>
+                    </Col>
+                    
+                    <Col xs={4} md={2} className="tech-icons">
                     <img src={node} style={{width:'50%'}} alt='nodejs'/>
+                    </Col>
+                    <Col xs={4} md={2} className="tech-icons">
+                    <img src={js1} alt='js'/>
+                    </Col>
+                    
+                    <Col xs={4} md={2} className="tech-icons">
+                        <img src={html} alt='html'/>
+                    </Col>
+                    
+                    <Col xs={4} md={2} className="tech-icons">
+                    <img src={css} alt='css'/>
                     </Col>
                     <Col xs={4} md={2} className="tech-icons">
                     <img src={bootstrap} style={{width:'50%'}}  alt='bootstrap'/>
                     </Col>
                     <Col xs={4} md={2} className="tech-icons">
                     <img src={ci} style={{width:'50%'}}  alt='ci'/>
-                    </Col>
-                    <Col xs={4} md={2} className="tech-icons">
-                    <img src={express} style={{width:'50%'}}  alt='express js'/>
                     </Col>
                     <Col xs={4} md={2} className="tech-icons">
                     <img src={php} style={{width:'50%'}}  alt='php'/>
@@ -87,16 +95,21 @@ const Skills = () => {
                 <Container>
                 <div className='row'>
                     <div className='col-sm-6 ' style={{color:'silver'}}>
+                        <b>JavaScript</b>
+                        <ProgressBar className='progressbar' now={100} />
+                        <b>React Js</b>
+                        <ProgressBar className='progressbar' now={100} />
+                        <b>Node Js</b>
+                        <ProgressBar className='progressbar' now={100} />
+                         <b>Mongo DB</b>
+                        <ProgressBar className='progressbar' now={90} />
                         <b>HTML</b>
                         <ProgressBar className='progressbar' now={100} />
                         <b>CSS</b>
                         <ProgressBar className='progressbar' now={100} />
                         <b>Bootstrap</b>
                         <ProgressBar className='progressbar' now={90} />
-                        <b>JavaScript</b>
-                        <ProgressBar className='progressbar' now={80} />
-                        <b>React Js</b>
-                        <ProgressBar className='progressbar' now={90} />
+                        
                         <b>React Bootstrap</b>
                         <ProgressBar className='progressbar' now={90} />
                     </div>
@@ -109,8 +122,6 @@ const Skills = () => {
                         <ProgressBar className='progressbar' now={90} />
                         <b>JQuery</b>
                         <ProgressBar className='progressbar' now={70} />
-                        <b>Node Js</b>
-                        <ProgressBar className='progressbar' now={60} />
                         <b>Java</b>
                         <ProgressBar className='progressbar' now={50} />
                     </div>

@@ -1,7 +1,44 @@
 .Body {
   margin: 0;
   padding: 0;
-  background-color: #040D12;
+  /* background-color: #040D12; */
   width: 100%;
   height: auto;  
+}
+.main-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none; /* Ensures content is clickable */
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 100vh;
+  color: #fff; /* Ensure text contrasts against video */
+  /* padding-bottom: 100px; Space for footer */
+  background-color: rgba(0, 0, 0, 0.3); /* Optional: soft overlay to improve readability */
+}
+
+.video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity as needed */
+  z-index: 0;
 }

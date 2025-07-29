@@ -3,15 +3,15 @@ import MainNavbar from './MainNavbar'
 import { Container } from 'react-bootstrap'
 import { useState } from 'react';
 import { useEffect } from 'react';
-import balu from './Images/balu.png'
+import balu from './Images/Balraj.png'
 import prize from './Images/prize-removebg-preview (1).png'
 import About from './About';
 import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
-  const texts = ['WEB DEVELOPER', 'SOFTWARE DEVELOPER', 'ERP DEVELOPER', 'FULLSTACK DEVELOPER'];
+  const texts = ['SOFTWARE DEVELOPER', 'WEB DEVELOPER', 'ERP DEVELOPER', 'FULLSTACK DEVELOPER', 'NATIVE APP DEVELOPER'];
   const [currentIndex, setCurrentIndex] = useState(0);
-  const navigate=useNavigate();
+  const navigate = useNavigate();
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length);
@@ -33,7 +33,7 @@ const Home = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [animationStarted]);
 
-  const contact=()=>{
+  const contact = () => {
     navigate('/contact')
   }
   return (
@@ -43,10 +43,13 @@ const Home = () => {
           <div className='col-sm-9'>
             <h1 className='anitext'>{texts[currentIndex]}</h1>
             <div className='name'>
-              <h3>Hello there!👋🏻<br /> I'm Balraj, a passionate web developer dedicated to crafting meaningful
-                and user-friendly digital experiences. With a strong foundation in programming and a
-                creative mindset, I strive to bring innovative solutions to the world of technology.
-                Let's collaborate and build something extraordinary together!</h3>
+              <h3>
+                Hello there! 👋🏻<br />
+                I'm <strong>Balraj</strong>, a passionate <strong>Software & Web Developer</strong> committed to building modern, scalable, and user-centric digital solutions. With expertise in full-stack development, I create high-performance applications that solve real-world problems and enhance user experiences.<br /><br />
+                From crafting clean code and responsive UIs to integrating complex backend systems, I bring both creativity and technical precision to every project. Leveraging technologies like JavaScript, MERN stack, and automation tools, I aim to deliver impactful software that drives results.<br /><br />
+                Let’s collaborate and turn bold ideas into robust digital products!
+              </h3>
+
             </div>
             <div className="button-borders pt-4">
               <button className="primary-button" onClick={contact}> HIRE ME
